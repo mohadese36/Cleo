@@ -1,0 +1,104 @@
+
+
+/* services */
+.services-container {
+    width: 100%;
+    padding: 0 0.9375rem; 
+}
+
+.services-item__content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.services-item {
+    width: 100%; 
+    background-color: var(--services-item-background);
+    border-radius: 1.0625rem;
+    padding: 0.9375rem; 
+    transition: all 0.9s ease;
+    box-shadow: 0 0.125rem 0.5rem rgba(99, 99, 99, 0.2); 
+    position: relative;
+}
+
+.services-item::after,.services-item::before{
+    content: "";
+    position: absolute;
+    width: 19%;
+    height: 19%;
+    transition: all 0.3s;
+}
+.services-item::after{
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-top-left-radius: 20px;
+    border-top: 1px solid var(--color-accent);
+    border-left: 1px solid var(--color-accent);
+}
+.services-item::before{
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-bottom-right-radius: 20px;
+    border-bottom: 1px solid var(--color-accent); 
+    border-right: 1px solid var(--color-accent); 
+}
+
+.html-icon::after,
+.html-icon::before {
+    border-color: var(--color-info);
+} 
+
+.mobile-icon::after,
+.mobile-icon::before {
+    border-color: var(--light-blue);
+}
+.web-icon::after,
+.web-icon::before {
+    border-color: var(--light-orange);
+}
+
+.wordpress-icon::after,
+.wordpress-icon::before {
+    border-color: var(--light-red);
+}
+
+.brand-icon::after,
+.brand-icon::before {
+    border-color: var(--light-violet); 
+}
+
+.stra-icon::after,
+.stra-icon::before {
+    border-color: var(--light-blueviolet); 
+}
+
+.services-item__content:hover .services-item::before{
+    width: 93%;
+    height: 87%;
+}
+.services-item__content:hover .services-item::after{
+    width: 93%;
+    height: 87%;
+}
+.services-item h5 {
+    font-size: 1rem; 
+    margin: 0 0 1.5rem; 
+    color: var(--color-secondary);
+}
+
+.services-item p {
+    font-size: 1rem; 
+    margin: 0 0 1rem; 
+    color: var(--paragraph-light);
+}
+
+.services-item:hover span,
+.services-item:hover h5,
+.services-item:hover p {
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+

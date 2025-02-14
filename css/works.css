@@ -1,0 +1,41 @@
+
+/* works */
+.works {
+    padding:  70px 0 0 ;
+    } 
+.works-content {
+    background-color: var(--light-accent);
+    border-radius: 3.125rem 0 3.125rem 0; /* 50px */
+    text-align: right;
+    padding: 2.5rem; /* 40px */
+    width: 90%;
+    margin: auto;
+}
+
+
+.works-btn{
+    text-align: left;
+}
+
+.works-h4 h4 {
+    font-size: 1.875rem; 
+    color: var(--heading-light); 
+    margin-bottom: 0.3125rem;
+    text-align: right;
+}
+
+.works-btn button {
+    padding: 0.75rem 1.875rem; 
+    border-radius: 0.9375rem;
+    background-color: var(--light-secondary); 
+    color: var(--button-text);
+    border: 0.0625rem solid var(--color-primary); 
+    font-size: 0.9375rem; 
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.works-btn button:hover {
+    background-color: var(--color-secondary);
+    color: var(--button-text);
+}

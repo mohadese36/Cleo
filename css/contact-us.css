@@ -1,0 +1,124 @@
+
+
+/* contact */
+.contact {
+    position: relative; 
+    background: url(../imeges/8.png); 
+    background-color: var(--color-success);
+    /* background-color: var(--color-primary); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.contact * {
+    position: relative;
+    z-index: 2;
+}
+.contact-h5 {
+    padding-top: 1.25rem; 
+}
+
+.form-container {
+    width: 45.625rem; 
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.info-container {
+    width: 100%;
+    text-align: right;
+    vertical-align: top;
+}
+.info-container h5 {
+    margin-bottom: 1rem; 
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.info-container h5:first-of-type {
+    margin: 0 0 0.9375rem; 
+}
+
+.info-container p {
+    margin: 0 0 1rem;
+    color: var(--light-info);
+    font-weight: 100;
+}
+.form-container,
+.info-container {
+    display: inline-block;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 0.875rem 1.25rem; 
+    border: none;
+    border-radius: 0.3125rem; 
+    color: var(--input-text);
+    background-color: var(--input-bg);
+    opacity: 0.6;
+    font-size: 0.9375rem;
+    text-align: right;
+    margin-bottom: 1.875rem;
+    z-index: 6;
+}
+input:focus,
+textarea:focus {
+    outline: none; 
+    border: 1px solid var(--input-border-focus);
+    background-color: var(--input-bg-focus);
+    outline: none;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--light-info); 
+}
+
+textarea {
+    height: 9.3125rem; 
+    resize: none;
+    margin-bottom: 1.25rem;
+}
+
+.name,
+.email {
+    width: 49.5%;
+    display: inline-block;
+    padding-top: 1.5625rem; 
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 1.25rem; 
+}
+
+form button {
+    background-color: var(--button-bg); 
+    border: 1px solid var(--button-border); 
+    color: var(--light-info); 
+    font-size: 0.9375rem;
+    padding: 0.75rem 1.875rem;
+    border: none;
+    border-radius: 0.4375rem; 
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    margin-bottom: 1.25rem; 
+}
+form button:hover {
+    background-color: var(--button-bg-hover);
+    border-color: var(--button-border-hover);
+    color: var(--button-text-hover);
+}
